@@ -1,0 +1,47 @@
+<head> 
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="TDL.css">
+</head>
+
+<input 
+id="todoInput"
+onkeydown="cekEnter(event)">
+<input 
+type="text"
+id="searchTodo"
+placeholder="Cari Todo..."
+oninput="tampilkanTodo()">
+<button onclick="tambahTodo()">
+    Tambah</button>
+<button onclick="hapusSemua()">
+    Hapus Semua</button>
+<select id="prioritas">
+    <option>Rendah</option>
+    <option>Sedang</option>
+    <option>Tinggi</option>
+</select>
+
+<button onclick="ubahFilter('semua')">
+    Semua</button>
+<button onclick="ubahFilter('selesai')">
+     Selesai</button>
+ <button onclick="ubahFilter('belum')">
+    Belum</button>
+<ul id="daftarTodo"></ul>
+
+<p 
+id="jumlahTodo"></p>
+<p 
+id="jumlahSelesai"></p>
+<p 
+id="jumlahBelum"></p>
+
+<p>Progress</p>
+<div class="progress">
+    <div id="progressBar"></div>
+</div>
+<p id="persenProgress">0%</p>
+
+<script src="TDL.js"></script>
+
