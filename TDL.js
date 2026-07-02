@@ -51,7 +51,7 @@ function tampilkanTodo() {
 });
 
     let jumlah = document.getElementById('jumlahTodo');
-    jumlah.textContent = 'Total = ' + todos.length;
+    jumlah.textContent = 'Total To Do = ' + todos.length;
 
     let jumlahBelum = todos.length - jumlahSelesai;
     document.getElementById('jumlahSelesai').textContent = 'Selesai = ' + jumlahSelesai;
